@@ -16,11 +16,7 @@ const Main = () => {
             like the one in.
           </p>
           <hr />
-          
           <SearchBox />
-          {/* <Button variant="primary" size="lg" type="button">
-            Example button
-          </Button> */}
         </div>
       </Container>
     </div>
