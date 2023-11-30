@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 
 const SearchBox = () => {
+  const [searchValue, setSearchValue] = useState("");
+  
+  const handleSearchValue = (e) => {
+    setSearchValue(e.target.value)
+  }
 
   return (
     <div>
@@ -13,6 +18,8 @@ const SearchBox = () => {
           placeholder="Username"
           aria-label="Username"
           aria-describedby="basic-addon1"
+          value={searchValue}
+          onChange={(e) => handleSearchValue(e)}
         />
       </InputGroup>
     </div>
