@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Button } from "react-bootstrap";
 import Header from "./Layouts/Header";
+import SearchBox from "./SearchBox";
 
 const Main = () => {
   
@@ -14,7 +15,9 @@ const Main = () => {
             Using a series of utilities, you can create this Jumbotron, just
             like the one in.
           </p>
+          <hr />
           
+          <SearchBox />
           {/* <Button variant="primary" size="lg" type="button">
             Example button
           </Button> */}
