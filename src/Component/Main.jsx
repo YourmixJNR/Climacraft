@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import Header from "./Layouts/Header";
-import "../App.css";
+import "./Main.css";
 import ShowWeather from "./WeatherResult";
 
 const Main = () => {
@@ -22,7 +22,7 @@ const Main = () => {
         );
         const result = await response.json();
         setData(result)
-        // console.log(data);
+        console.log(result);
       } catch (error) {
         console.log("Error fetching...", error);
       }
