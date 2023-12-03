@@ -4,9 +4,11 @@ import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import Header from "./Layouts/Header";
 import "../App.css";
+import ShowWeather from "./WeatherResult";
 
 const Main = () => {
   const [searchValue, setSearchValue] = useState("");
+  const [data, setData] = useState(null)
 
   const handleSearchValue = (e) => {
     setSearchValue(e.target.value);
@@ -18,8 +20,9 @@ const Main = () => {
         const response = await fetch(
           `http://api.openweathermap.org/data/2.5/weather?q=${searchValue},uk&APPID=${process.env.REACT_APP_API_KEY}`
         );
-        const data = await response.json();
-        console.log(data);
+        const result = await response.json();
+        setData(result)
+        // console.log(data);
       } catch (error) {
         console.log("Error fetching...", error);
       }
@@ -55,6 +58,7 @@ const Main = () => {
           </InputGroup>
         </div>
       </Container>
+      <ShowWeather data={data} />
     </div>
   );
 };
