@@ -1,18 +1,30 @@
+// ShowWeather.jsx
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
-const ShowWeather = ({ data }) => {
+const WeatherResult = ({ data }) => {
+  if (!data || !data.weather || data.weather.length === 0) {
+    
+    return (
+      <Card style={{ width: "18rem" }}>
+        <Card.Body>
+          <Card.Title>No weather data available</Card.Title>
+        </Card.Body>
+      </Card>
+    );
+  }
+
   return (
     <Card style={{ width: "18rem" }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Img variant="top" src={`https://openweathermap.org/img/wn/${data.weather.icon}@2x.png`} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>Weather Details</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
           {data.weather.map((item) => (
-            <div key={item.id}>{item.description}</div>
+            <div key={item.id}>
+              {item.description}
+            </div>
           ))}
         </Card.Text>
         <Button variant="primary">Go somewhere</Button>
@@ -21,4 +33,4 @@ const ShowWeather = ({ data }) => {
   );
 };
 
-export default ShowWeather;
+export default WeatherResult;
