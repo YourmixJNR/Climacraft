@@ -8,11 +8,13 @@ const WeatherResult = ({ data }) => {
     return;
   }
 
+  console.log(data);
+
   return (
     <Card style={{ width: "18rem" }}>
       <Card.Img
         variant="top"
-        src={`https://openweathermap.org/img/wn/${data.weather.icon}@2x.png`}
+        src={`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
       />
       <Card.Body>
         <Card.Title>Weather Details</Card.Title>
