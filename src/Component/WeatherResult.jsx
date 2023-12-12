@@ -20,7 +20,7 @@ const WeatherResult = ({ data }) => {
         <Card.Title>Weather Details</Card.Title>
         <Card.Text>
           {data.weather.map((item) => (
-            <> key={item.id}>{item.description}</>
+            <d key={item.id}>{item.description}</d>
           ))}
         </Card.Text>
         <Button variant="primary">Go somewhere</Button>
