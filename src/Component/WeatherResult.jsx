@@ -8,7 +8,6 @@ const ShowWeather = ({ data }) => {
     return <Spinner animation="grow" />;
   }
 
-  console.log(data)
   return (
     <Card style={{ width: "18rem" }}>
       <Card.Img
@@ -19,11 +18,10 @@ const ShowWeather = ({ data }) => {
       {data.weather.map((item) => (
         <Card.Body key={item.id}>
           <Card.Title>Weather Details of {data.name}</Card.Title>
-          <Card.Text>The Temperature is {item.main}°C</Card.Text>
+          <Card.Text>The Temperature is {data.main.temp}°C</Card.Text>
           <Card.Text>Weather: {item.description}</Card.Text>
           <Card.Text>Humidity: {data.main.humidity}%</Card.Text>
           <Card.Text>Wind Speed: {data.wind.speed} m/s</Card.Text>
-          <Button variant="primary" onClick={() => console.log("Going somewhere!")}>Go somewhere</Button>
         </Card.Body>
       ))}
     </Card>
