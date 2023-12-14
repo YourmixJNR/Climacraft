@@ -8,6 +8,7 @@ const ShowWeather = ({ data }) => {
     return <Spinner animation="grow" />;
   }
 
+  console.log(data)
   return (
     <Card style={{ width: "18rem" }}>
       <Card.Img

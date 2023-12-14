@@ -19,7 +19,7 @@ const Main = () => {
     const fetchWeather = async () => {
       try {
         const response = await fetch(
-          `https://api.openweathermap.org/data/2.5/weather?q=${searchValue},uk&APPID=${process.env.REACT_APP_API_KEY}`
+          `https://api.openweathermap.org/data/2.5/weather?q=${searchValue},&APPID=${process.env.REACT_APP_API_KEY}`
         );
         const result = await response.json();
         setData(result);
