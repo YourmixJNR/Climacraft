@@ -4,7 +4,6 @@ import { Container } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import Header from "./Layouts/Header";
-import "./Main.css";
 import WeatherResult from "../Component/WeatherResult";
 
 const Main = () => {
