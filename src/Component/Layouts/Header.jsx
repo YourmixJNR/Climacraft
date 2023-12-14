@@ -8,7 +8,7 @@ const Header = () => {
     <header>
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Navbar.Brand href="#home">ClimaCraft</Navbar.Brand>
         </Container>
       </Navbar>
     </header>

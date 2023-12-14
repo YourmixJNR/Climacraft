@@ -38,20 +38,19 @@ const Main = () => {
       <Header />
 
       <Container className="p-3 mb-4 bg-body-tertiary rounded-3 custom">
-
         <div className="container-fluid py-5">
-          <h1 className="display-5 fw-bold">Custom Jumbotron</h1>
-          <p className="col-md-8 fs-4">
-            Using a series of utilities, you can create this Jumbotron, just
-            like the one in.
+          <h1 className="display-5 fw-bold mb-4">Weather Now ☁️</h1>
+          <p className="col-md-8 fs-4 mb-5">
+            Check the current weather conditions for any location worldwide.
+            Enter a city name below!
           </p>
           <hr />
-
+          <br />
           <InputGroup className="mb-3">
-            <InputGroup.Text id="basic-addon1">@</InputGroup.Text>
+            <InputGroup.Text id="basic-addon1">🌍</InputGroup.Text>
             <Form.Control
               type="text"
-              placeholder="Enter location"
+              placeholder="Please enter location"
               aria-label="Location"
               aria-describedby="basic-addon1"
               value={searchValue}
@@ -63,9 +62,7 @@ const Main = () => {
         <div className="p-3">
           <WeatherResult data={data} />
         </div>
-
       </Container>
-      
     </div>
   );
 };
