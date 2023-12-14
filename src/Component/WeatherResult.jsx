@@ -18,7 +18,7 @@ const ShowWeather = ({ data }) => {
       />
       {data.weather.map((item) => (
         <Card.Body key={item.id}>
-          <Card.Title>Weather Details</Card.Title>
+          <Card.Title>Weather Details of {data.name}</Card.Title>
           <Card.Text>The Temperature is {item.main}°C</Card.Text>
           <Card.Text>Weather: {item.description}</Card.Text>
           <Card.Text>Humidity: {data.main.humidity}%</Card.Text>
