@@ -11,7 +11,7 @@ Welcome to the ClimaCraft! This simple React application allows users to check r
 
 ## Links
 
-Live Site URL: [live site](#)
+Live Site URL: [live site](https://climacraftapp.netlify.app/)
 
 ## Useful resources
 
