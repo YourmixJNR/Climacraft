@@ -1,10 +1,11 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import Spinner from 'react-bootstrap/Spinner';
 
 const ShowWeather = ({ data }) => {
   if (!data || !data.weather || !data.main || data.weather.length === 0) {
-    return <div>Loading...</div>; 
+    return <Spinner animation="grow" />;
   }
 
   return (
