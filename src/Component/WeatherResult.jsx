@@ -8,7 +8,7 @@ const WeatherResult = ({ data }) => {
     return;
   }
 
-  console.log(data);
+  // console.log(data);
 
   return (
     <Card style={{ width: "18rem" }}>
