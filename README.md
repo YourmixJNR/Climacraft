@@ -6,6 +6,5 @@ Welcome to the ClimaCraft! This simple React application allows users to check r
 
 ## Screenshot
 
-![](screenshot/Screenshot_1.png)
-![](screenshot/Screenshot_2.jpg)
-
+![Screenshot 1](/public/screenshot/Screenshot_1.png)
+![Screenshot 2](/public/screenshot/Screenshot_2.png)

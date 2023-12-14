@@ -4,6 +4,7 @@ import { Container } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import Header from "./Layouts/Header";
+import "./Main.css";
 import WeatherResult from "../Component/WeatherResult";
 
 const Main = () => {
@@ -36,8 +37,8 @@ const Main = () => {
     <div>
       <Header />
 
-      <Container className="p-3 mb-4 bg-body-tertiary rounded-3 custom">
-        <div className="container-fluid py-5">
+      <Container className="p-3 mb-4 bg-body-tertiary rounded-3 ">
+        <div className="container-fluid py-5 custom">
           <h1 className="display-5 fw-bold mb-4">Weather Now ☁️</h1>
           <p className="col-md-8 fs-4 mb-5">
             Check the current weather conditions for any location worldwide.
