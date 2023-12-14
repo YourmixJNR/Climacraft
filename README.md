@@ -11,7 +11,7 @@ Welcome to the ClimaCraft! This simple React application allows users to check r
 
 ## Links
 
-Live Site URL: (live site)[#]
+Live Site URL: [live site](#)
 
 ## Useful resources
 
@@ -21,4 +21,4 @@ Unsplash - Get tons of free stock images.
 
 ## Author
 
-Twitter - (@YourmixJNR)[https://twitter.com/YourmixJNR]
+Twitter - [@YourmixJNR](https://twitter.com/YourmixJNR)
