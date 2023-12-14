@@ -1,3 +1,5 @@
-.custom {
-    background-color: red !important;
+.rounded-3 {
+    background: url('/public/image/weather.jpg');
+    background-size: cover;
+    border-radius: 0px 0px 10px 10px !important;
 }
