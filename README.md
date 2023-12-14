@@ -16,7 +16,9 @@ Live Site URL: [live site](#)
 ## Useful resources
 
 OpenWeather API - Get tons of free and premium API's.
+
 Pexels - Get tons of free stock images.
+
 Unsplash - Get tons of free stock images.
 
 ## Author
